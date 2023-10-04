@@ -1,0 +1,171 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Reset some default styles */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: #fff;
+}
+
+/* Style the navigation tabs */
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #33333382;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+}
+
+nav:hover{
+    animation: rotateKenyanFlag 2s linear infinite;
+}
+
+
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tabs a.active::after {
+    content: "";
+    display: block;
+    height: 2px; /* Adjust the thickness of the line as needed */
+    background-color: #008000; /* Green color for the line */
+    position: absolute;
+    bottom: -2px; /* Adjust the distance from the text as needed */
+    left: 0;
+    right: 0;
+}
+
+.gok-emblem{
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+/* Style the content sections */
+section {
+    display: none;
+    padding: 20px;
+    color: white;
+}
+
+
+/* Section content */
+
+
+/* Center the container vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 3rem;
+    background-color: #00000080; /* Background color for the container */
+}
+
+/* Style the centered form */
+.centered-form {
+    background-color: #33333382;
+    width: 100%;
+    padding: 20px;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.centered-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Style the form sections */
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-section label {
+    flex: 1;
+}
+
+.form-section input[type="radio"] {
+    flex: auto;
+    margin-right: 10px;
+}
+
+.form-section input {
+    flex: 3;
+    color: #fff;
+    background: #00000037;
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the buttons */
+.centered-form button {
+    background-color: #008000; /* Blue background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.centered-form button[type="reset"] {
+    background-color: #dc3545; /* Red background for reset button */
+}
+
+.centered-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+ /* Style the select element */
+ select {
+    padding: 10px;
+    height: fit-content;
+    background-color: rgba(161, 105, 14, 0.7); /* Translucent white background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Remove default focus outline */
+    margin-top: 7px;
+}
+
+/* Style the select on hover and focus */
+select:hover,
+select:focus {
+    background-color: rgba(161, 105, 14, 0.7); /* Lighter translucent background on hover/focus */
+}
+
+.form-section input[type="text"] .allocation-amount{
+    border: none;
+}

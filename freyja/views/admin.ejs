@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <script type="text/javascript" src="./js/admin.js" defer></script>
+
+</head>
+<body>
+    <nav>
+        <ul class="nav-tabs">
+            <img class="gok-emblem" src="./media/emblem-gok.svg"></img>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="dashboard">
+            <div class="header">
+                <h1>Dashboard</h1>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button id="searchButton">Search</button>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <button class="tablinks active" onclick="openTab(event, 'dataTab')">Data</button>
+                <button class="tablinks" onclick="openTab(event, 'usersTab')">Manage Users</button>
+            </div>
+            
+            <div id="dataTab" class="tabcontent">
+                <h2>Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Purpose</th>
+                            <th>Ministry</th>
+                            <th>Amount</th>
+                            <th>Payment Method</th>
+                            <th>Authorized By</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add table data rows here -->
+                        <% for (let i = 0; i < data.length; i++) { %>
+                            <tr>
+                                <td><%= data[i].purpose %></td>
+                                <td><%= data[i].ministry %></td>
+                                <td><%= data[i].amount %></td>
+                                <td><%= data[i].paymentMethod %></td>
+                                <td><%= data[i].authorizedBy %></td>
+                                <td><%= data[i].dateOfTransfer %></td>
+                                <td><%= data[i].time %></td>
+                            </tr>
+                            <% } %>
+                
+                    
+                </table>
+             
+            </div>
+            
+            <div id="usersTab" class="tabcontent">
+                <h2>Manage Users</h2>
+                <!-- User management content here -->
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

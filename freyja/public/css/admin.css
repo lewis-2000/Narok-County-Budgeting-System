@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style the navigation tabs */
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #33333382;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.gok-emblem{
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+/* Style the dashboard container */
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(26, 26, 26, 0.57); /* Translucent black background */    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #fff; /* Black text */
+}
+
+.search {
+    display: flex;
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    background-color: rgb(252, 179, 22); /* Blue background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the tabs */
+.tabs {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.tablinks {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff0000; /* Red background */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 15px; /* Rounded borders */
+    margin-right: 10px; /* Add space between links */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the active tab */
+.tablinks.active {
+    background-color: #008000; /* Green background for active tab */
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    background-color: transparent; /* White background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff0000; /* Red background for table headers */
+    color: #fff;
+}
+
+/* Style search results */
+.search-results {
+    margin-top: 20px;
+}
+
+/* Modernize the user management content */
+.user-management {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+
+/* Sections */
+section {
+    padding: 20px;
+    color: white;
+}

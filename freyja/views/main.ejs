@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./media/emblem-gok.svg" type="image/svg+xml">
+
+    <script type="text/javascript" src="./js/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="tabs">
+            <img class="gok-emblem" src="./media/emblem-gok.svg"></img>
+            <li><a href="#allocation">Allocation</a></li>
+            <li><a href="#education" class="active">Education</a></li>
+            <li><a href="#health">Health</a></li>
+            <li><a href="#sports">Sports and Gender</a></li>
+            <li><a href="#ict">ICT</a></li>
+            <li><a href="#water">Water Resources</a></li>
+            <li><a href="#finance">Finance</a></li>
+            <li><a href="#roads">Roads and Transport</a></li>
+            <li><a href="#tourism">Tourism</a></li>
+            <li><a href="#contingencies">Contingencies Fund</a></li>
+        </ul>
+ 
+    </nav>
+
+    <section id="allocation">
+        <div class="container">
+            <form class="centered-form" action="" method="POST">
+                <h2>You are logged in as Emmanuel Ketere</h2>
+               
+                <div class="form-section">
+                    <input type="text" name="amount" placeholder="Enter amount allocated from Central Government" required>
+
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" class="allocation-amount" required>
+                </div>
+        
+                <button type="submit">save</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <form class="centered-form" action="/main" method="POST">
+                <h2>Education Ministry</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+    
+    </section>
+    <section id="health">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of Health</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+     
+    </section>
+
+    <section id="sports">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of Sports</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+        
+    </section>
+
+    <section id="ict">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of ICT</h2>
+    
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+    
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" placeholder="Education Development" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+
+                <div class="form-section">
+                    <input type="text" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+
+                <div class="form-section">
+                    <input type="text" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+
+                <div class="form-section">
+                    <input type="text" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+
+                <div class="form-section">
+                    <input type="text" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+    
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="selectNumber">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+
+                </div>
+    
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>        
+
+    </section>
+
+    <section id="water">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of Water</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+        
+    </section>
+
+    <section id="finance">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of Finance</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+       
+    </section>
+
+    <section id="roads">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of Roads</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+        
+    </section>
+
+    <section id="tourism">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Ministry of Tourism</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+        
+    </section>
+
+    <section id="contingencies">
+        <div class="container">
+            <form class="centered-form">
+                <h2>Contingencies</h2>
+        
+                <!-- First Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="percentageAllocation" placeholder="Percentage Allocation" required>
+                    <select class="selectNumber" name="percentageAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Second Horizontal Form Section -->
+                <div class="form-section">
+                    <input type="text" name="educationDevelopment" placeholder="Education Development" required>
+                    <select class="selectNumber" name="educationDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="earlyChildhoodDevelopment" placeholder="Early Childhood Development" required>
+                    <select class="selectNumber" name="earlyChildhoodDevelopmentSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="tertiaryBursaries" placeholder="Tertiary Bursaries" required>
+                    <select class="selectNumber" name="tertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="nonTertiaryBursaries" placeholder="Non Tertiary Bursaries" required>
+                    <select class="selectNumber" name="nonTertiaryBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <div class="form-section">
+                    <input type="text" name="orphanedAndVulnerableChildrenBursaries" placeholder="Orphaned and Vulnerable Children Bursaries" required>
+                    <select class="selectNumber" name="orphanedAndVulnerableChildrenBursariesSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <!-- Last Row with Two Text Inputs -->
+                <div class="form-section">
+                    <input type="text" name="totalAllocation" placeholder="Total Allocation" required>
+                    <select class="selectNumber" name="totalAllocationSelect">
+                        <!-- JavaScript will generate options here -->
+                    </select>
+                </div>
+        
+                <button type="submit">submit</button>
+                <button type="reset">Compute</button>
+            </form>
+        </div>
+        
+       
+    </section>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000, #000, #ff0000, #ff0000, #008000, #008000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */    
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.gok-emblem{
+    height: 9rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right:1rem;
+    
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 1rem;
+    background-color:rgba(0, 0, 0, 0.5) ;
+}
+
+.btn {
+    background-color: #007BFF; /* Blue accent */
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+/* Btn effects */
+/* Define keyframes for the rotating colors */
+@keyframes rotateKenyanFlag {
+    0% {
+        border-color: #000;
+    }
+    25% {
+        border-color: #ff0000;
+    }
+    50% {
+        border-color: #008000;
+    }
+    75% {
+        border-color: #fff;
+    }
+    100% {
+        border-color: #000;
+    }
+}
+
+/* Define keyframes for the rotating colors */
+@keyframes rotateKenyanFlag {
+    0% {
+        border-color: #000;
+    }
+    25% {
+        border-color: #ff0000;
+    }
+    50% {
+        border-color: #008000;
+    }
+    75% {
+        border-color: #ff0000;
+    }
+    100% {
+        border-color: #000;
+    }
+}
+
+/* Apply the animation to the button when hovered */
+.btn:hover {
+    animation: rotateKenyanFlag 2s linear infinite;
+}
+
+
+
+/* Accent colors */
+.btn-green {
+    background-color: #28a745; /* Green accent */
+}
+
+.btn-red {
+    background-color: #dc3545; /* Red accent */
+    color: #fff;
+}
+
+.text-black {
+    color: #000; /* Black text */
+}
+
+.text-white {
+    color: #fff; /* White text */
+}
+
+.reset{
+    margin-left: 0.5rem;
+}
+
