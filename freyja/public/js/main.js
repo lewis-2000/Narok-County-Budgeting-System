@@ -12,7 +12,7 @@ tabs.forEach(tab => {
         const targetSection = document.getElementById(targetId);
         targetSection.style.display = 'block';
         targetSection.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Prevent scrolling when a tab is active
+        // document.body.style.overflow = 'hidden'; // Prevent scrolling when a tab is active
     });
 });
 
