@@ -13,7 +13,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 db.once('open', () => {
-    console.log('Connected to main server');
+    console.log('\x1b[33mConnected to main server');
 });
 
 
@@ -30,6 +30,13 @@ router.route('/')
     try {
       // Create a new document using the transaction schema
       const transactions = new transaction({
+        purpose: req.body.purpose,
+        ward: req.body.ward,
+        ministry: req.body.ministry,
+        paymentMethod: req.body.paymentMethod,
+        authorizedBy: req.body.authorized,
+        dateOfTransfer: req.body.dateOfTransfer,
+        time: req.body.time,
         percentageAllocation: req.body.percentageAllocation,
         percentageAllocationSelect: req.body.percentageAllocationSelect,
         educationDevelopment: req.body.educationDevelopment,

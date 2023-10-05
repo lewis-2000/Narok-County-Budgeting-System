@@ -49,5 +49,5 @@ app.use('/test', testSwaggerRouter);
 
 
 app.listen(port, ()=> {
-    console.log(`listening on port ${port}`);
+    console.log(`%clistening on port ${port}`, 'color: purple;');
 });
