@@ -24,12 +24,27 @@ async function retrieveData() {
   }
 }
 
+async function fetchUsers() {
+  try {
+    await client.connect();
+    const db = client.db(dbName);
+    const collection = db.collection('users');
+    const documents = await collection.find({}).toArray();
+    return documents; // Return the retrieved data
+  } catch (err) {
+    console.error("Error:", err);
+  } finally {
+    await client.close();
+  }
+}
+
 router.route('/')
   .get(async (req, res) => {
     try {
       const searchData = req.query.search; // Retrieve the search query from the URL query parameters
 
       const data = await retrieveData(); // Retrieve data asynchronously
+      const users = await fetchUsers(); // Retrieve users asynchronously
 
       if (searchData) {
         // Use a filter function to find documents that match the search query
@@ -49,7 +64,7 @@ router.route('/')
         });
       }
 
-      res.render('admin', { data, searchQuery: searchData  });
+      res.render('admin', { data, users, searchQuery: searchData  });
     } catch (error) {
       console.error('Error:', error);
       res.status(500).send('Internal Server Error'); // Handle errors gracefully
