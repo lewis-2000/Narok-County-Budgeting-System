@@ -51,8 +51,8 @@ router.route('/')
         data = data.filter(item => {
           // You can modify this logic to match your specific search requirements
           return (
-            item.purpose.includes(searchData) || // Check if purpose1 includes the search query
-            item.purpose.includes(searchData) || // Check if purpose2 includes the search query
+            item.purpose.includes(searchData) || // Check if purpose includes the search query
+            item.purpose.includes(searchData) || // Check if purpose includes the search query
             item.ministry.includes(searchData) ||
             // Add more fields to search as needed
             item.amount.includes(searchData) ||
