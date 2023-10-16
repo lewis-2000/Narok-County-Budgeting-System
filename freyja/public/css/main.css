@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #000;
+    background: #fff;
     margin: 0;
     padding: 0;
 
@@ -84,6 +84,11 @@ section {
     padding-right: 7rem;
     padding-top: 3rem;
     background-color: #00000080; /* Background color for the container */
+}
+
+
+#allocation .container{
+    background-color: transparent;
 }
 
 /* Style the centered form */

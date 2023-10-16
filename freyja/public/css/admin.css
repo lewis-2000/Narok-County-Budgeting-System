@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #000;
+    background: #fff;
 }
 
 ul {
@@ -22,7 +22,7 @@ ul {
 nav ul {
     list-style: none;
     display: flex;
-    background-color: #33333382;
+    background-color: #333232;
 }
 
 nav li {
