@@ -22,7 +22,7 @@ db.once('open', () => {
 
 router.route('/')
   .get(function(req, res) {
-    res.render('main');
+    res.render('main', {title: 'Narok County Budgeting System'});
   })
   .post(async (req, res) => {
     // const formData = req.body; // Form data sent in the request body
